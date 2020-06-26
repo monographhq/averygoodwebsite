@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Avery Marlow Valdes</title>
+  <meta name="description" content="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Avery Good Website</h1>
+    <p>Welcome to the team Avery Valdes</p>
+  </header>
+
+  <main role="main" class="main">
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1800" height="850"
+      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBfOeZEMj0kyGpwXeGHZxhM%2Faverygoodwebsite%3Fnode-id%3D0%253A1"
+      allowfullscreen></iframe>
+  </main>
+
+  <footer>
+  </footer>
+
+  <!-- Javascript -->
+  <script>
+    const iframe = document.querySelector('iframe');
+    iframe.style.width = '100%';
+    iframe.addEventListener('load', () => {
+      setTimeout(() => {
+        const links = iframe.contentWindow.document.body.querySelectorAll('a');
+        console.log(links);
+        // const link = document.querySelector('#react-page > div > a');
+      }, 3000)
+    })
+  </script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
