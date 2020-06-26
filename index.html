@@ -10,7 +10,13 @@
   <meta name="description" content="">
 
   <!-- Styles -->
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+  <style>
+    body {
+      background: #001323;
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
@@ -33,15 +39,9 @@
   <script>
     const iframe = document.querySelector('iframe');
     iframe.style.width = '100%';
-    iframe.addEventListener('load', () => {
-      setTimeout(() => {
-        const links = iframe.contentWindow.document.body.querySelectorAll('a');
-        console.log(links);
-        // const link = document.querySelector('#react-page > div > a');
-      }, 3000)
-    })
+    iframe.style.border = 'none';
   </script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <!-- <script type="text/javascript" src="js/main.js"></script> -->
 
 </body>
 
